@@ -226,7 +226,7 @@ address {
 	.nav-next .nav-title {
 		padding: 0 0.45vw;
 		line-height: 85%;
-		font-size: 16.2vw;
+		font-size: 14vw;
 		font-family: "Batiment Ext Bold", Helvetica, Arial, sans-serif;
 		font-weight: normal;
 		text-transform: uppercase;
@@ -281,10 +281,7 @@ address {
 	padding-bottom: 0.2vw;
 	text-align: left;
 	width: 33vw;
-	// padding-left: 50vw;
-
-	.meta-description {
-	}
+	line-height: 1.1;
 }
 // #primary .meta-description,
 // #primary .meta-taxonomies,
@@ -299,6 +296,11 @@ address {
 	ul,
 	li {
 		display: inline;
+	}
+
+	p {
+		margin-bottom: 1vw;
+		display: block;
 	}
 }
 
@@ -337,6 +339,7 @@ address {
 
 #primary .meta-website {
 	@extend #branding;
+	margin-top: 1vw;
 	padding-top: 0;
 	padding-bottom: 2vw;
 	line-height: 85%;

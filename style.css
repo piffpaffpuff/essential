@@ -216,7 +216,7 @@ address {
 #primary .nav-next .nav-title {
   padding: 0 0.45vw;
   line-height: 85%;
-  font-size: 16.2vw;
+  font-size: 14vw;
   font-family: "Batiment Ext Bold", Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase;
@@ -249,7 +249,8 @@ address {
   padding-top: 1.5vw;
   padding-bottom: 0.2vw;
   text-align: left;
-  width: 33vw; }
+  width: 33vw;
+  line-height: 1.1; }
 
 #primary .meta-description p,
 #primary .meta-description div,
@@ -257,6 +258,9 @@ address {
 #primary .meta-description ul,
 #primary .meta-description li {
   display: inline; }
+#primary .meta-description p {
+  margin-bottom: 1vw;
+  display: block; }
 
 #primary .project-media {
   margin-top: 8vw; }
@@ -278,6 +282,7 @@ address {
         opacity: 1; }
 
 #primary .meta-website {
+  margin-top: 1vw;
   padding-top: 0;
   padding-bottom: 2vw;
   line-height: 85%;
