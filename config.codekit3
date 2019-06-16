@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "29156",
 "files": {
+	"/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitattributes",
+		"oF": 0
+		},
 	"/404.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -26,7 +34,9 @@
 		"oF": 0
 		},
 	"/config.rb": {
-		"ft": 131072,
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/config.rb",
 		"oF": 0
