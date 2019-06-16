@@ -1,0 +1,436 @@
+/*
+Theme Name: Essential
+Theme URI: http://www.iwannegro.ch/
+Author: Iwan Negro
+Author URI: http://www.iwannegro.ch/
+Description: It's a portfolio theme
+Version: 1.0
+License: GPL3
+*/
+
+/* !Imports ----------------------------------------- */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "fonts/";
+
+/* !Partials ----------------------------------------- */
+
+@mixin font-format-header {
+	font-family: "Reminiscence", Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	font-weight: normal;
+	line-height: 140%;
+}
+
+$text-color: #191919;
+
+/* !Mixins ----------------------------------------- */
+
+
+/* !Reset ----------------------------------------- */
+
+body {
+	font-family: "Reminiscence", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 140%;
+	color: $text-color;
+	background-color: #fff;
+}
+
+/* !Fonts ----------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+b,
+strong,
+i,
+italic,
+oblique,
+address {
+	font-weight: normal;
+	font-style: normal;
+}
+a {
+	color: $text-color;
+	text-decoration: none;
+}
+a:hover {
+}
+* html .clearfix {
+	height: 1%;
+	overflow: visible;
+}
+
+/* float clearing for IE7 */
+
+*+html .clearfix {
+	min-height: 1%;
+}
+
+/* float clearing for everyone else */
+
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	font-size: 0;
+}
+
+/* google font loader */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li,
+address {
+	visibility: hidden;
+}
+.wf-active h1,
+.wf-active h2,
+.wf-active h3,
+.wf-active h4,
+.wf-active h5,
+.wf-active p,
+.wf-active li,
+.wf-active address {
+	visibility: visible;
+}
+
+// ::selection {
+// 	background-color: #FDCB4F;
+// }
+// ::-moz-selection {
+// 	background-color: #FDCB4F;
+// }
+
+/* !Helper ----------------------------------------- */
+
+.is-visible {
+	visibility: visible;
+}
+
+.is-hidden {
+	visibility: hidden;
+}
+
+/* !Structure ---------------------------------------- */
+
+/* !Page ---------------------------------------- */
+
+/* !Header ----------------------------------------- */
+
+#branding {
+	font-family: "Batiment Ext Bold", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	line-height: 100%;
+	font-size: 0.9vw;
+	text-transform: uppercase;
+	padding: 2vw 1.5vw 0.75vw 1.5vw;
+}
+#site-title {
+	display: inline;
+}
+
+/* !Menu ------------------------------------------- */
+
+#access {
+	white-space: nowrap;
+	float: right;
+}
+#access ul,
+#access li,
+#quick-nav ul,
+#quick-nav li  {
+	display: inline;
+	white-space: nowrap;
+}
+#access li {
+	margin-left: 1vw;
+}
+
+/* !Content ---------------------------------------- */
+
+/* projects */
+
+#complementary {
+}
+#complementary .project:nth-child(even),
+.single-project #complementary .project {
+	text-align: right;
+}
+#complementary .project {
+	margin-bottom: 5vw;
+}
+#complementary .entry-content {
+	height: 40vw;
+}
+#complementary .entry-thumbnail {
+	overflow: hidden;
+	height: 22vw;
+	width: 40vw;
+	background-color: #f6f6f6;
+	margin-left: 22vw;
+	margin-top: -8vw;
+	position: relative;
+	z-index: -1;
+
+	opacity: 0;
+	transform: translateY(15vw);
+	transition: transform 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95),
+							opacity 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+	&[data-scroll="in"] {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	img {
+		display: block;
+	  width: 100%;
+	  position: absolute;
+
+		transform: scale(1.1);
+		transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
+
+		&[data-scroll="in"] {
+			transform: scale(1);
+		}
+	}
+}
+#complementary .entry-thumbnail.thumbnail-row-even {
+	margin-left: 42vw;
+}
+#complementary .entry-header {
+	//width: 50vw;
+}
+#complementary,
+#primary {
+	.entry-title {
+		pointer-events: none;
+	}
+}
+#complementary,
+#primary {
+	.entry-title,
+	.nav-previous .nav-title,
+	.nav-next .nav-title {
+		padding: 0 0.45vw;
+		line-height: 85%;
+		font-size: 16.2vw;
+		font-family: "Batiment Ext Bold", Helvetica, Arial, sans-serif;
+		font-weight: normal;
+		text-transform: uppercase;
+
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		-ms-hyphens: auto;
+		hyphens: auto;
+		word-break: break-word;
+		
+		// font-kerning: none;
+		// -webkit-text-rendering: optimizeSpeed;
+		// -webkit-transform: translateZ(0);
+		// text-rendering: optimizeSpeed;
+
+		&.split-text {
+			//visibility: hidden;
+
+			&[data-scroll="in"] {
+				//visibility: visible;
+			}
+
+			.word {
+				 overflow: hidden;
+			}
+		}
+	}
+}
+
+#complementary .entry-meta {
+	@extend #branding;
+	padding-top: 0.5vw;
+	padding-bottom: 2vw;
+}
+#complementary .entry-meta li {
+	display: inline;
+}
+
+
+/* single */
+
+
+
+#primary {
+	margin-bottom: 12vw;
+}
+
+#primary .entry-column,
+.error404 #primary .entry-content {
+	@extend #branding;
+	padding-top: 1.5vw;
+	padding-bottom: 0.2vw;
+	text-align: left;
+	width: 33vw;
+	// padding-left: 50vw;
+
+	.meta-description {
+	}
+}
+// #primary .meta-description,
+// #primary .meta-taxonomies,
+// #primary .meta-website {
+// 	width: auto;
+// 	margin-top: 1.7em;
+// }
+#primary .meta-description {
+	p,
+	div,
+	h3,
+	ul,
+	li {
+		display: inline;
+	}
+}
+
+#primary .project-media {
+	margin-top: 8vw;
+
+	li {
+		padding: 5vw 12vw;
+
+		&:nth-child(even) {
+			text-align: right;
+		}
+
+		img {
+			max-width: 60vw;
+			height: auto;
+
+			opacity: 0;
+			transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+
+			&.media-position-left {
+				transform: translate(10vh, 10vh);
+			}
+
+			&.media-position-right {
+				transform: translate(-10vh, 10vh);
+			}
+
+			&[data-scroll="in"] {
+				transform: translate(0, 0);
+				opacity: 1;
+			}
+		}
+	}
+}
+
+#primary .meta-website {
+	@extend #branding;
+	padding-top: 0;
+	padding-bottom: 2vw;
+	line-height: 85%;
+	transform: translate(0, 0);
+	transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+
+	.meta-website-icon {
+		display: inline-block;
+	}
+
+	&:hover {
+		transform: translate(3vh, 0);
+	}
+}
+
+/* !Footer ------------------------------------------ */
+
+#colophon h3 {
+	display: none;
+}
+
+#colophon .bio {
+	line-height: 85%;
+	font-size: 16.5vw;
+	font-family: "Batiment Ext Bold", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 0 0.45vw;
+}
+
+#colophon .contact {
+	@extend #branding;
+	padding-top: 3vw;
+	padding-bottom: 4vw;
+	// display: flex;
+	//
+	// .side {
+	// 	display: flex;
+	// 	flex-grow: 1;
+	// 	align-items: flex-end;
+	// 	justify-content: space-between;
+	// }
+	// ul, li {
+	// 	display: inline;
+	// 	white-space: nowrap
+	// }
+	// li {
+	// 	margin-left: 1vw;
+	//
+	// 	&:first-child {
+	// 		margin-left: 0;
+	// 	}
+	// }
+}
+
+@media screen and (max-width: 380px) {
+	#branding {
+		font-size: 4vw;
+	}
+
+	#primary .entry-column,
+	.error404 #primary .entry-content {
+		width: auto;
+	}
+}
+
+@media screen and (min-width: 381px) and (max-width: 560px) {
+	#branding {
+		font-size: 3.3vw;
+	}
+	#primary .entry-column,
+	.error404 #primary .entry-content {
+		width: auto;
+	}
+}
+
+@media screen and (min-width: 561px) and (max-width: 660px) {
+	#branding {
+		font-size: 2.7vw;
+	}
+	#primary .entry-column,
+	.error404 #primary .entry-content {
+		width: auto;
+	}
+}
+
+@media screen and (min-width: 661px) and (max-width: 800px) {
+	#branding {
+		font-size: 1.7vw;
+	}
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+	#branding {
+		font-size: 1.3vw;
+	}
+}

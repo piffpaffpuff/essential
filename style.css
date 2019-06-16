@@ -1,0 +1,338 @@
+/*
+Theme Name: Essential
+Theme URI: http://www.iwannegro.ch/
+Author: Iwan Negro
+Author URI: http://www.iwannegro.ch/
+Description: It's a portfolio theme
+Version: 1.0
+License: GPL3
+*/
+/* !Imports ----------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  font-family: 'Batiment Ext Bold';
+  src: url("fonts/batimentext-bold-webfont.woff2") format("woff2"), url("fonts/batimentext-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/* !Partials ----------------------------------------- */
+/* !Mixins ----------------------------------------- */
+/* !Reset ----------------------------------------- */
+body {
+  font-family: "Reminiscence", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 140%;
+  color: #191919;
+  background-color: #fff; }
+
+/* !Fonts ----------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+b,
+strong,
+i,
+italic,
+oblique,
+address {
+  font-weight: normal;
+  font-style: normal; }
+
+a {
+  color: #191919;
+  text-decoration: none; }
+
+* html .clearfix {
+  height: 1%;
+  overflow: visible; }
+
+/* float clearing for IE7 */
+* + html .clearfix {
+  min-height: 1%; }
+
+/* float clearing for everyone else */
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0; }
+
+/* google font loader */
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li,
+address {
+  visibility: hidden; }
+
+.wf-active h1,
+.wf-active h2,
+.wf-active h3,
+.wf-active h4,
+.wf-active h5,
+.wf-active p,
+.wf-active li,
+.wf-active address {
+  visibility: visible; }
+
+/* !Helper ----------------------------------------- */
+.is-visible {
+  visibility: visible; }
+
+.is-hidden {
+  visibility: hidden; }
+
+/* !Structure ---------------------------------------- */
+/* !Page ---------------------------------------- */
+/* !Header ----------------------------------------- */
+#branding, #complementary .entry-meta, #primary .entry-column,
+.error404 #primary .entry-content, #primary .meta-website, #colophon .contact {
+  font-family: "Batiment Ext Bold", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 100%;
+  font-size: 0.9vw;
+  text-transform: uppercase;
+  padding: 2vw 1.5vw 0.75vw 1.5vw; }
+
+#site-title {
+  display: inline; }
+
+/* !Menu ------------------------------------------- */
+#access {
+  white-space: nowrap;
+  float: right; }
+
+#access ul,
+#access li,
+#quick-nav ul,
+#quick-nav li {
+  display: inline;
+  white-space: nowrap; }
+
+#access li {
+  margin-left: 1vw; }
+
+/* !Content ---------------------------------------- */
+/* projects */
+#complementary .project:nth-child(even),
+.single-project #complementary .project {
+  text-align: right; }
+
+#complementary .project {
+  margin-bottom: 5vw; }
+
+#complementary .entry-content {
+  height: 40vw; }
+
+#complementary .entry-thumbnail {
+  overflow: hidden;
+  height: 22vw;
+  width: 40vw;
+  background-color: #f6f6f6;
+  margin-left: 22vw;
+  margin-top: -8vw;
+  position: relative;
+  z-index: -1;
+  opacity: 0;
+  transform: translateY(15vw);
+  transition: transform 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95); }
+  #complementary .entry-thumbnail[data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(0); }
+  #complementary .entry-thumbnail img {
+    display: block;
+    width: 100%;
+    position: absolute;
+    transform: scale(1.1);
+    transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1); }
+    #complementary .entry-thumbnail img[data-scroll="in"] {
+      transform: scale(1); }
+
+#complementary .entry-thumbnail.thumbnail-row-even {
+  margin-left: 42vw; }
+
+#complementary .entry-title,
+#primary .entry-title {
+  pointer-events: none; }
+
+#complementary .entry-title,
+#complementary .nav-previous .nav-title,
+#complementary .nav-next .nav-title,
+#primary .entry-title,
+#primary .nav-previous .nav-title,
+#primary .nav-next .nav-title {
+  padding: 0 0.45vw;
+  line-height: 85%;
+  font-size: 16.2vw;
+  font-family: "Batiment Ext Bold", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  word-break: break-word; }
+  #complementary .entry-title.split-text .word,
+  #complementary .nav-previous .nav-title.split-text .word,
+  #complementary .nav-next .nav-title.split-text .word,
+  #primary .entry-title.split-text .word,
+  #primary .nav-previous .nav-title.split-text .word,
+  #primary .nav-next .nav-title.split-text .word {
+    overflow: hidden; }
+
+#complementary .entry-meta {
+  padding-top: 0.5vw;
+  padding-bottom: 2vw; }
+
+#complementary .entry-meta li {
+  display: inline; }
+
+/* single */
+#primary {
+  margin-bottom: 12vw; }
+
+#primary .entry-column,
+.error404 #primary .entry-content {
+  padding-top: 1.5vw;
+  padding-bottom: 0.2vw;
+  text-align: left;
+  width: 33vw; }
+
+#primary .meta-description p,
+#primary .meta-description div,
+#primary .meta-description h3,
+#primary .meta-description ul,
+#primary .meta-description li {
+  display: inline; }
+
+#primary .project-media {
+  margin-top: 8vw; }
+  #primary .project-media li {
+    padding: 5vw 12vw; }
+    #primary .project-media li:nth-child(even) {
+      text-align: right; }
+    #primary .project-media li img {
+      max-width: 60vw;
+      height: auto;
+      opacity: 0;
+      transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1); }
+      #primary .project-media li img.media-position-left {
+        transform: translate(10vh, 10vh); }
+      #primary .project-media li img.media-position-right {
+        transform: translate(-10vh, 10vh); }
+      #primary .project-media li img[data-scroll="in"] {
+        transform: translate(0, 0);
+        opacity: 1; }
+
+#primary .meta-website {
+  padding-top: 0;
+  padding-bottom: 2vw;
+  line-height: 85%;
+  transform: translate(0, 0);
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1); }
+  #primary .meta-website .meta-website-icon {
+    display: inline-block; }
+  #primary .meta-website:hover {
+    transform: translate(3vh, 0); }
+
+/* !Footer ------------------------------------------ */
+#colophon h3 {
+  display: none; }
+
+#colophon .bio {
+  line-height: 85%;
+  font-size: 16.5vw;
+  font-family: "Batiment Ext Bold", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 0 0.45vw; }
+
+#colophon .contact {
+  padding-top: 3vw;
+  padding-bottom: 4vw; }
+
+@media screen and (max-width: 380px) {
+  #branding, #complementary .entry-meta, #primary .entry-column,
+  .error404 #primary .entry-content, #primary .meta-website, #colophon .contact {
+    font-size: 4vw; }
+
+  #primary .entry-column,
+  .error404 #primary .entry-content {
+    width: auto; } }
+@media screen and (min-width: 381px) and (max-width: 560px) {
+  #branding, #complementary .entry-meta, #primary .entry-column,
+  .error404 #primary .entry-content, #primary .meta-website, #colophon .contact {
+    font-size: 3.3vw; }
+
+  #primary .entry-column,
+  .error404 #primary .entry-content {
+    width: auto; } }
+@media screen and (min-width: 561px) and (max-width: 660px) {
+  #branding, #complementary .entry-meta, #primary .entry-column,
+  .error404 #primary .entry-content, #primary .meta-website, #colophon .contact {
+    font-size: 2.7vw; }
+
+  #primary .entry-column,
+  .error404 #primary .entry-content {
+    width: auto; } }
+@media screen and (min-width: 661px) and (max-width: 800px) {
+  #branding, #complementary .entry-meta, #primary .entry-column,
+  .error404 #primary .entry-content, #primary .meta-website, #colophon .contact {
+    font-size: 1.7vw; } }
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  #branding, #complementary .entry-meta, #primary .entry-column,
+  .error404 #primary .entry-content, #primary .meta-website, #colophon .contact {
+    font-size: 1.3vw; } }

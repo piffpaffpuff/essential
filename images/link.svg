@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="10px" viewBox="0 0 46 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>link</title>
+    <desc>Created with Sketch.</desc>
+    <g id="link" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M1,4.75 L42,4.75" id="Line" stroke="#000000" stroke-width="2"></path>
+        <polyline id="Shape" stroke="#000000" stroke-width="2" stroke-linecap="square" transform="translate(39.828427, 4.653427) rotate(-45.000000) translate(-39.828427, -4.653427) " points="41.8284271 2.65342712 41.8284271 6.65342712 37.8284271 6.65342712"></polyline>
+    </g>
+</svg>
