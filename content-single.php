@@ -19,7 +19,6 @@
 						<?php hello_project_taxonomy('task', __('Tasks:', 'hello')); ?>
 						<?php hello_project_taxonomy('agency', __('Agency:', 'hello')); ?>
 						<?php hello_project_awards(); ?>
-						<?php hello_project_related_people(__('Collaboration with:', 'hello')); ?>
 
 				</div>
 			</div>
@@ -32,7 +31,7 @@
 	<div class="entry-content">
 		<div class="content-group">
 			<div class="entry-images clearfix">
-				<?php hello_media_list('col-12', 'data-scroll'); ?>
+				<?php hello_media_list('1280-auto', 'data-scroll'); ?>
 			</div>
 		</div>
 	</div><!-- .entry-content -->

@@ -19,15 +19,14 @@ function hello_setup() {
     load_theme_textdomain('hello', get_template_directory() . '/languages');
 
 	// add image sizes
-	add_image_size('crop-4-4', 280, 280, true);
-	add_image_size('crop-8-4', 560, 320, true);
+	add_image_size('1280-720', 1280, 720, true);
+	add_image_size('960-540', 960, 540, true);
+	add_image_size('640-360', 640, 360, true);
 
-	add_image_size('col-full', 1920, 0, false);
-	add_image_size('col-16', 1240, 0, false);
-	add_image_size('col-12', 920, 0, false);
-	add_image_size('col-8', 600, 0, false);
-	add_image_size('col-6', 440, 0, false);
-	add_image_size('col-4', 280, 0, false);
+	add_image_size('1920-auto', 1920, 0, false);
+	add_image_size('1280-auto', 1280, 0, false);
+	add_image_size('960-auto', 960, 0, false);
+	add_image_size('640-auto', 640, 0, false);
 
 	//add_image_size('row-2', 0, 160, false);
 	//add_image_size('row-4', 0, 280, false);
@@ -211,36 +210,6 @@ function hello_project_redirect_to_website() {
 	} else {
 		return false;
 	}
-}
-
-/**
- * Projects - Show the people that are related to a project
- */
-function hello_project_related_people($label = null) {
-	if(!function_exists("get_related_people")) {
-		return;
-	}
-
-	$related_people = get_related_people();
-	$size = sizeof($related_people);
-
-	if($related_people) : ?>
-		<?php if(empty($label)) : ?>
-			<?php foreach($related_people as $index => $related_person) : ?>
-				<span><?php echo $related_person->post_title; ?></span><?php if($index < $size - 1) : ?>, <?php endif; ?>
-			<?php endforeach; ?>
-		<?php else : ?>
-			<div class="meta-people">
-				<h3><?php echo $label; ?></h3>
-				<ul class="people-list">
-					<?php foreach($related_people as $index => $related_person) : ?>
-						<?php $url = get_person_website(); ?>
-						<li><?php if(!empty($url)) : ?><a href="<?php echo $url; ?>" target="_blank"><?php endif; ?><?php echo $related_person->post_title; ?><?php if(!empty($url)) : ?></a><?php endif; ?><?php if($index == $size - 1) : ?>.<?php else : ?>, <?php endif; ?></li>
-					<?php endforeach; ?>
-				</ul>
-			</div>
-		<?php endif; ?>
-	<?php endif;
 }
 
 /**

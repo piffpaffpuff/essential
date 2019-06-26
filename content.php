@@ -31,7 +31,7 @@
 				}
 			?>
 			<div class="entry-thumbnail <?php echo $row; ?>" data-scroll>
-				<?php hello_featured_media('crop-8-4', 'data-scroll'); ?>
+				<?php hello_featured_media('960-540', 'data-scroll'); ?>
 			</div>
 		</div><!-- .entry-content -->
 		<footer class="entry-footer">
