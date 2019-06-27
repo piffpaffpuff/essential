@@ -71,7 +71,7 @@
 	if(!is_admin()){
 		// enqueue jquery again to send it to the footer
 		wp_deregister_script('jquery');
-		wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', false, '3.3.1', true);
+		wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', false, '3.4.1', true);
 		wp_enqueue_script('jquery');
 	}
 ?>
