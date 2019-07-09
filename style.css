@@ -60,6 +60,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url("fonts/batimentext-bold-webfont.woff2") format("woff2"), url("fonts/batimentext-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+/* !Variables ----------------------------------------- */
 /* !Partials ----------------------------------------- */
 /* !Mixins ----------------------------------------- */
 /* !Reset ----------------------------------------- */
@@ -216,7 +217,7 @@ address {
 #primary .nav-next .nav-title {
   padding: 0 0.45vw;
   line-height: 85%;
-  font-size: 16.2vw;
+  font-size: 14vw;
   font-family: "Batiment Ext Bold", Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase;
@@ -249,7 +250,8 @@ address {
   padding-top: 1.5vw;
   padding-bottom: 0.2vw;
   text-align: left;
-  width: 33vw; }
+  width: 33vw;
+  line-height: 1.1; }
 
 #primary .meta-description p,
 #primary .meta-description div,
@@ -257,6 +259,9 @@ address {
 #primary .meta-description ul,
 #primary .meta-description li {
   display: inline; }
+#primary .meta-description p {
+  margin-bottom: 0.9em;
+  display: block; }
 
 #primary .project-media {
   margin-top: 8vw; }
@@ -270,23 +275,24 @@ address {
       opacity: 0;
       transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1); }
       #primary .project-media li img.media-position-left {
-        transform: translate(10vh, 10vh); }
+        transform: translate(10vh, 10vh) scale(0.9); }
       #primary .project-media li img.media-position-right {
-        transform: translate(-10vh, 10vh); }
+        transform: translate(-10vh, 10vh) scale(0.9); }
       #primary .project-media li img[data-scroll="in"] {
-        transform: translate(0, 0);
+        transform: translate(0, 0) scale(1);
         opacity: 1; }
 
 #primary .meta-website {
   padding-top: 0;
   padding-bottom: 2vw;
   line-height: 85%;
-  transform: translate(0, 0);
-  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1); }
+  margin-top: 0.9em; }
   #primary .meta-website .meta-website-icon {
+    transform: translate(0, 0);
+    transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
     display: inline-block; }
-  #primary .meta-website:hover {
-    transform: translate(3vh, 0); }
+  #primary .meta-website:hover .meta-website-icon {
+    transform: translate(1em, 0); }
 
 /* !Footer ------------------------------------------ */
 #colophon h3 {
