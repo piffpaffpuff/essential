@@ -280,7 +280,7 @@ function hello_awards_list($show_projects = true) {
 	?>
 	<h3><?php esc_html_e('Awards', 'hello'); ?></h3>
 	<ul>
-	<? foreach($awards as $award) : ?>
+	<?php foreach($awards as $award) : ?>
 		<?php $name = hello_get_award_name($award); ?>
 		<?php if(!empty($name)) : ?>
 			<li>
