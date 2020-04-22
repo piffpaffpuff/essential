@@ -184,7 +184,7 @@ function hello_project_taxonomy($key, $label = null) {
 				<ul class="taxonomy-<?php echo $key; ?>">
 				<?php foreach($terms as $index => $term) : ?>
 					<?php $url = get_project_term_meta($term->term_id, 'website'); ?>
-					<li><?php if(!empty($url)) : ?><a href="<?php echo $url; ?>" target="_blank"><?php endif; ?><?php echo $term->name; ?><?php if(!empty($url)) : ?></a><?php endif; ?><?php if($index == $size - 1) : ?>.<?php else : ?>, <?php endif; ?></li>
+					<li><?php if(!empty($url)) : ?><a href="<?php echo $url; ?>" target="_blank"><?php endif; ?><?php echo $term->name; ?><?php if(!empty($url)) : ?></a><?php endif; ?><?php if($index == $size - 1) : ?><?php else : ?>, <?php endif; ?></li>
 				<?php endforeach; ?>
 				</ul>
 			</div>
@@ -195,16 +195,16 @@ function hello_project_taxonomy($key, $label = null) {
 /**
  * Projects - Get Website
  */
-function hello_project_get_website() {
-	$url = get_project_meta('website');
+function hello_project_get_website($post_id = null) {
+	$url = get_project_meta('website', $post_id);
 	return $url;
 }
 
 /**
  * Projects - Redirect to Website
  */
-function hello_project_redirect_to_website() {
-	$redirect = get_project_meta('redirect');
+function hello_project_redirect_to_website($post_id = null) {
+	$redirect = get_project_meta('redirect', $post_id);
 	if($redirect == 1 && !empty(hello_project_get_website())) {
 		return true;
 	} else {

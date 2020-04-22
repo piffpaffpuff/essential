@@ -10,9 +10,9 @@ License: GPL3
 
 /* !Imports ----------------------------------------- */
 
-@import "compass/reset";
-@import "compass/css3";
-@import "fonts/";
+@import "reset";
+@import "fonts";
+@import "bourbon";
 
 /* !Variables ----------------------------------------- */
 
@@ -171,6 +171,10 @@ address {
 #complementary .project:nth-child(even),
 .single-project #complementary .project {
 	text-align: right;
+
+	.entry-meta {
+		float: right;
+	}
 }
 #complementary .project {
 	margin-bottom: 5vw;
@@ -268,15 +272,18 @@ address {
 	@extend #branding;
 	padding-top: 0.5vw;
 	padding-bottom: 2vw;
-}
-#complementary .entry-meta li {
-	display: inline;
-}
+	width: 18vw;
+	text-transform: none;
+	font-size: 0.8vw;
 
+	li, 
+	h3,
+	ul {
+		display: inline;
+	}
+}
 
 /* single */
-
-
 
 #primary {
 	margin-bottom: 12vw;
@@ -422,6 +429,11 @@ address {
 	.error404 #primary .entry-content {
 		width: auto;
 	}
+
+	#complementary .entry-meta {
+		width: initial;
+		font-size: 3vw;
+	}
 }
 
 @media screen and (min-width: 381px) and (max-width: 560px) {
@@ -431,6 +443,10 @@ address {
 	#primary .entry-column,
 	.error404 #primary .entry-content {
 		width: auto;
+	}
+	#complementary .entry-meta {
+		width: initial;
+		font-size: 2.4vw;
 	}
 }
 
@@ -442,16 +458,27 @@ address {
 	.error404 #primary .entry-content {
 		width: auto;
 	}
+	#complementary .entry-meta {
+		width: 50vw;
+		font-size: 2.2vw;
+	}
 }
 
 @media screen and (min-width: 661px) and (max-width: 800px) {
 	#branding {
 		font-size: 1.7vw;
 	}
+	#complementary .entry-meta {
+		width: 50vw;
+	}
 }
 
 @media screen and (min-width: 801px) and (max-width: 1024px) {
 	#branding {
 		font-size: 1.3vw;
+	}
+	#complementary .entry-meta {
+		width: 33vw;
+		font-size: 1.2vw;
 	}
 }

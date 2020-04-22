@@ -18,7 +18,15 @@
 				<h3 class="entry-title split-text" data-scroll><?php the_title(); ?></h3>
 				<div class="entry-meta">
 					<div class="meta-taxonomies">
-						<?php hello_project_taxonomy('type'); ?>
+						<?php if(hello_project_redirect_to_website()) : ?>
+							<?php if(!empty($post->post_content)) : ?>
+								<div class="meta-description"><?php the_content(); ?></div>
+							<?php endif; ?>
+							<?php hello_project_taxonomy('task', __('Tasks:', 'hello')); ?>
+							<?php hello_project_taxonomy('type', __('Type:', 'hello')); ?>
+						<?php else: ?>
+							<?php hello_project_taxonomy('type'); ?>
+						<?php endif; ?>
 					</div>
 				</div>
 			</div>

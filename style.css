@@ -8,6 +8,10 @@ Version: 1.0
 License: GPL3
 */
 /* !Imports ----------------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,42 +28,41 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
   font-size: 100%;
+  font: inherit;
   vertical-align: baseline; }
 
-html {
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
   line-height: 1; }
 
 ol, ul {
   list-style: none; }
 
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
 table {
   border-collapse: collapse;
   border-spacing: 0; }
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle; }
-
-q, blockquote {
-  quotes: none; }
-  q:before, q:after, blockquote:before, blockquote:after {
-    content: "";
-    content: none; }
-
-a img {
-  border: none; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block; }
 
 @font-face {
   font-family: 'Batiment Ext Bold';
   src: url("fonts/batimentext-bold-webfont.woff2") format("woff2"), url("fonts/batimentext-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
+/* stylelint-disable order/properties-alphabetical-order */
+/* stylelint-enable */
 /* !Variables ----------------------------------------- */
 /* !Partials ----------------------------------------- */
 /* !Mixins ----------------------------------------- */
@@ -139,8 +142,8 @@ address {
 /* !Structure ---------------------------------------- */
 /* !Page ---------------------------------------- */
 /* !Header ----------------------------------------- */
-#branding, #complementary .entry-meta, #primary .entry-column,
-.error404 #primary .entry-content, #primary .meta-website, #colophon .contact {
+#branding, #colophon .contact, #primary .meta-website, #primary .entry-column,
+.error404 #primary .entry-content, #complementary .entry-meta {
   font-family: "Batiment Ext Bold", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 100%;
@@ -171,6 +174,9 @@ address {
 #complementary .project:nth-child(even),
 .single-project #complementary .project {
   text-align: right; }
+  #complementary .project:nth-child(even) .entry-meta,
+  .single-project #complementary .project .entry-meta {
+    float: right; }
 
 #complementary .project {
   margin-bottom: 5vw; }
@@ -236,10 +242,14 @@ address {
 
 #complementary .entry-meta {
   padding-top: 0.5vw;
-  padding-bottom: 2vw; }
-
-#complementary .entry-meta li {
-  display: inline; }
+  padding-bottom: 2vw;
+  width: 18vw;
+  text-transform: none;
+  font-size: 0.8vw; }
+  #complementary .entry-meta li,
+  #complementary .entry-meta h3,
+  #complementary .entry-meta ul {
+    display: inline; }
 
 /* single */
 #primary {
@@ -259,6 +269,7 @@ address {
 #primary .meta-description ul,
 #primary .meta-description li {
   display: inline; }
+
 #primary .meta-description p {
   margin-bottom: 0.9em;
   display: block; }
@@ -314,31 +325,46 @@ address {
   #branding, #complementary .entry-meta, #primary .entry-column,
   .error404 #primary .entry-content, #primary .meta-website, #colophon .contact {
     font-size: 4vw; }
-
   #primary .entry-column,
   .error404 #primary .entry-content {
-    width: auto; } }
+    width: auto; }
+  #complementary .entry-meta {
+    width: initial;
+    font-size: 3vw; } }
+
 @media screen and (min-width: 381px) and (max-width: 560px) {
   #branding, #complementary .entry-meta, #primary .entry-column,
   .error404 #primary .entry-content, #primary .meta-website, #colophon .contact {
     font-size: 3.3vw; }
-
   #primary .entry-column,
   .error404 #primary .entry-content {
-    width: auto; } }
+    width: auto; }
+  #complementary .entry-meta {
+    width: initial;
+    font-size: 2.4vw; } }
+
 @media screen and (min-width: 561px) and (max-width: 660px) {
   #branding, #complementary .entry-meta, #primary .entry-column,
   .error404 #primary .entry-content, #primary .meta-website, #colophon .contact {
     font-size: 2.7vw; }
-
   #primary .entry-column,
   .error404 #primary .entry-content {
-    width: auto; } }
+    width: auto; }
+  #complementary .entry-meta {
+    width: 50vw;
+    font-size: 2.2vw; } }
+
 @media screen and (min-width: 661px) and (max-width: 800px) {
   #branding, #complementary .entry-meta, #primary .entry-column,
   .error404 #primary .entry-content, #primary .meta-website, #colophon .contact {
-    font-size: 1.7vw; } }
+    font-size: 1.7vw; }
+  #complementary .entry-meta {
+    width: 50vw; } }
+
 @media screen and (min-width: 801px) and (max-width: 1024px) {
   #branding, #complementary .entry-meta, #primary .entry-column,
   .error404 #primary .entry-content, #primary .meta-website, #colophon .contact {
-    font-size: 1.3vw; } }
+    font-size: 1.3vw; }
+  #complementary .entry-meta {
+    width: 33vw;
+    font-size: 1.2vw; } }
