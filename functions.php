@@ -184,7 +184,7 @@ function hello_project_taxonomy($key, $label = null) {
 				<ul class="taxonomy-<?php echo $key; ?>">
 				<?php foreach($terms as $index => $term) : ?>
 					<?php $url = get_project_term_meta($term->term_id, 'website'); ?>
-					<li><?php if(!empty($url)) : ?><a href="<?php echo $url; ?>" target="_blank"><?php endif; ?><?php echo $term->name; ?><?php if(!empty($url)) : ?></a><?php endif; ?><?php if($index == $size - 1) : ?><?php else : ?>, <?php endif; ?></li>
+					<li><?php if(!empty($url)) : ?><a href="<?php echo $url; ?>" target="_blank"><?php endif; ?><?php echo $term->name; ?><?php if(!empty($url)) : ?></a><?php endif; ?><?php if($index == $size - 1) : ?>. <?php else : ?>, <?php endif; ?></li>
 				<?php endforeach; ?>
 				</ul>
 			</div>

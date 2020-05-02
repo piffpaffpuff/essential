@@ -174,6 +174,9 @@ address {
 #complementary .project:nth-child(even),
 .single-project #complementary .project {
   text-align: right; }
+  #complementary .project:nth-child(even) .header-group,
+  .single-project #complementary .project .header-group {
+    overflow: hidden; }
   #complementary .project:nth-child(even) .entry-meta,
   .single-project #complementary .project .entry-meta {
     float: right; }
@@ -243,12 +246,12 @@ address {
 #complementary .entry-meta {
   padding-top: 0.5vw;
   padding-bottom: 2vw;
-  width: 18vw;
-  text-transform: none;
-  font-size: 0.8vw; }
-  #complementary .entry-meta li,
-  #complementary .entry-meta h3,
-  #complementary .entry-meta ul {
+  width: 18vw; }
+  #complementary .entry-meta .meta-description p,
+  #complementary .entry-meta .meta-description div,
+  #complementary .entry-meta .meta-description h3,
+  #complementary .entry-meta .meta-description ul,
+  #complementary .entry-meta .meta-description li {
     display: inline; }
 
 /* single */
@@ -260,8 +263,7 @@ address {
   padding-top: 1.5vw;
   padding-bottom: 0.2vw;
   text-align: left;
-  width: 33vw;
-  line-height: 1.1; }
+  width: 33vw; }
 
 #primary .meta-description p,
 #primary .meta-description div,
@@ -269,10 +271,6 @@ address {
 #primary .meta-description ul,
 #primary .meta-description li {
   display: inline; }
-
-#primary .meta-description p {
-  margin-bottom: 0.9em;
-  display: block; }
 
 #primary .project-media {
   margin-top: 8vw; }
@@ -296,8 +294,7 @@ address {
 #primary .meta-website {
   padding-top: 0;
   padding-bottom: 2vw;
-  line-height: 85%;
-  margin-top: 0.9em; }
+  line-height: 85%; }
   #primary .meta-website .meta-website-icon {
     transform: translate(0, 0);
     transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -311,11 +308,11 @@ address {
 
 #colophon .bio {
   line-height: 85%;
-  font-size: 16.5vw;
   font-family: "Batiment Ext Bold", Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase;
-  padding: 0 0.45vw; }
+  padding: 0 0.45vw;
+  font-size: 14vw; }
 
 #colophon .contact {
   padding-top: 3vw;
@@ -329,8 +326,7 @@ address {
   .error404 #primary .entry-content {
     width: auto; }
   #complementary .entry-meta {
-    width: initial;
-    font-size: 3vw; } }
+    width: initial; } }
 
 @media screen and (min-width: 381px) and (max-width: 560px) {
   #branding, #complementary .entry-meta, #primary .entry-column,
@@ -340,8 +336,7 @@ address {
   .error404 #primary .entry-content {
     width: auto; }
   #complementary .entry-meta {
-    width: initial;
-    font-size: 2.4vw; } }
+    width: initial; } }
 
 @media screen and (min-width: 561px) and (max-width: 660px) {
   #branding, #complementary .entry-meta, #primary .entry-column,
@@ -351,8 +346,7 @@ address {
   .error404 #primary .entry-content {
     width: auto; }
   #complementary .entry-meta {
-    width: 50vw;
-    font-size: 2.2vw; } }
+    width: 50vw; } }
 
 @media screen and (min-width: 661px) and (max-width: 800px) {
   #branding, #complementary .entry-meta, #primary .entry-column,
@@ -366,5 +360,4 @@ address {
   .error404 #primary .entry-content, #primary .meta-website, #colophon .contact {
     font-size: 1.3vw; }
   #complementary .entry-meta {
-    width: 33vw;
-    font-size: 1.2vw; } }
+    width: 33vw; } }

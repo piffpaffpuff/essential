@@ -16,7 +16,7 @@ License: GPL3
 
 /* !Variables ----------------------------------------- */
 
-$fb-style: true;
+$fb-style: false;
 
 /* !Partials ----------------------------------------- */
 
@@ -172,6 +172,10 @@ address {
 .single-project #complementary .project {
 	text-align: right;
 
+	.header-group {
+		overflow: hidden;
+	}
+
 	.entry-meta {
 		float: right;
 	}
@@ -237,7 +241,7 @@ address {
 		@if $fb-style {
 			font-size: 14vw;
 		} @else {
-			font-size: 16.2vw;
+			font-size: 14vw;
 		}
 		font-family: "Batiment Ext Bold", Helvetica, Arial, sans-serif;
 		font-weight: normal;
@@ -273,13 +277,15 @@ address {
 	padding-top: 0.5vw;
 	padding-bottom: 2vw;
 	width: 18vw;
-	text-transform: none;
-	font-size: 0.8vw;
 
-	li, 
-	h3,
-	ul {
-		display: inline;
+	.meta-description {
+		p,
+		div,
+		h3,
+		ul,
+		li {
+			display: inline;
+		}
 	}
 }
 
@@ -297,9 +303,7 @@ address {
 	text-align: left;
 	width: 33vw;
 
-	@if $fb-style {
-		line-height: 1.1;
-	}
+
 }
 // #primary .meta-description,
 // #primary .meta-taxonomies,
@@ -388,36 +392,25 @@ address {
 
 #colophon .bio {
 	line-height: 85%;
-	font-size: 16.5vw;
+	
 	font-family: "Batiment Ext Bold", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
 	padding: 0 0.45vw;
+
+	@if $fb-style {
+		font-size: 14vw;
+	} @else {
+		font-size: 14vw;
+	}
 }
 
 #colophon .contact {
 	@extend #branding;
 	padding-top: 3vw;
 	padding-bottom: 4vw;
-	// display: flex;
-	//
-	// .side {
-	// 	display: flex;
-	// 	flex-grow: 1;
-	// 	align-items: flex-end;
-	// 	justify-content: space-between;
-	// }
-	// ul, li {
-	// 	display: inline;
-	// 	white-space: nowrap
-	// }
-	// li {
-	// 	margin-left: 1vw;
-	//
-	// 	&:first-child {
-	// 		margin-left: 0;
-	// 	}
-	// }
+
+
 }
 
 @media screen and (max-width: 380px) {
@@ -432,7 +425,6 @@ address {
 
 	#complementary .entry-meta {
 		width: initial;
-		font-size: 3vw;
 	}
 }
 
@@ -446,7 +438,6 @@ address {
 	}
 	#complementary .entry-meta {
 		width: initial;
-		font-size: 2.4vw;
 	}
 }
 
@@ -460,7 +451,6 @@ address {
 	}
 	#complementary .entry-meta {
 		width: 50vw;
-		font-size: 2.2vw;
 	}
 }
 
@@ -479,6 +469,5 @@ address {
 	}
 	#complementary .entry-meta {
 		width: 33vw;
-		font-size: 1.2vw;
 	}
 }

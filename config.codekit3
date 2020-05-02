@@ -4,10 +4,10 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "6073350F-EA75-4705-95D4-70460C83D58D"
+		"uuidString": "9BE25C47-EE9C-47AB-B6F3-C3280C2C72CE"
 		}
 	],
-"creatorBuild": "29156",
+"creatorBuild": "32001",
 "files": {
 	"/.gitattributes": {
 		"cB": 0,
@@ -15,6 +15,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/.gitattributes",
+		"oF": 0
+		},
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitignore",
 		"oF": 0
 		},
 	"/404.php": {
@@ -31,14 +39,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/archive.php",
-		"oF": 0
-		},
-	"/config.rb": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/config.rb",
 		"oF": 0
 		},
 	"/content-single.php": {
@@ -135,7 +135,7 @@
 		"oAP": "/favicon/safari-pinned-tab.svg",
 		"oF": 0,
 		"opt": 0,
-		"plM": 3758088159,
+		"plM": 52780316221407,
 		"prP": 0
 		},
 	"/favicon/site.webmanifest": {
@@ -289,7 +289,7 @@
 		"oAP": "/images/close.svg",
 		"oF": 0,
 		"opt": 0,
-		"plM": 3758088159,
+		"plM": 52780316221407,
 		"prP": 0
 		},
 	"/images/link.svg": {
@@ -299,7 +299,7 @@
 		"oAP": "/images/link.svg",
 		"oF": 0,
 		"opt": 0,
-		"plM": 3758088159,
+		"plM": 52780316221407,
 		"prP": 0
 		},
 	"/images/nav.svg": {
@@ -309,7 +309,7 @@
 		"oAP": "/images/nav.svg",
 		"oF": 0,
 		"opt": 0,
-		"plM": 3758088159,
+		"plM": 52780316221407,
 		"prP": 0
 		},
 	"/images/social.svg": {
@@ -319,7 +319,7 @@
 		"oAP": "/images/social.svg",
 		"oF": 0,
 		"opt": 0,
-		"plM": 3758088159,
+		"plM": 52780316221407,
 		"prP": 0
 		},
 	"/index.php": {
@@ -336,9 +336,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/easing/js/CustomBounce.min-min.js",
+		"oAP": "/js/gsap/easing/CustomBounce.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/easing/CustomEase.min.js": {
@@ -347,9 +347,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/easing/js/CustomEase.min-min.js",
+		"oAP": "/js/gsap/easing/CustomEase.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/easing/CustomWiggle.min.js": {
@@ -358,9 +358,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/easing/js/CustomWiggle.min-min.js",
+		"oAP": "/js/gsap/easing/CustomWiggle.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/easing/EasePack.min.js": {
@@ -369,9 +369,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/easing/js/EasePack.min-min.js",
+		"oAP": "/js/gsap/easing/EasePack.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/jquery.gsap.min.js": {
@@ -380,9 +380,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/js/jquery.gsap.min-min.js",
+		"oAP": "/js/gsap/jquery.gsap.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/AttrPlugin.min.js": {
@@ -391,9 +391,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/AttrPlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/AttrPlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/BezierPlugin.min.js": {
@@ -402,9 +402,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/BezierPlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/BezierPlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/ColorPropsPlugin.min.js": {
@@ -413,9 +413,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/ColorPropsPlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/ColorPropsPlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/CSSPlugin.min.js": {
@@ -424,9 +424,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/CSSPlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/CSSPlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/CSSRulePlugin.min.js": {
@@ -435,9 +435,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/CSSRulePlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/CSSRulePlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/DirectionalRotationPlugin.min.js": {
@@ -446,9 +446,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/DirectionalRotationPlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/DirectionalRotationPlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/DrawSVGPlugin.min.js": {
@@ -457,9 +457,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/DrawSVGPlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/DrawSVGPlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/EaselPlugin.min.js": {
@@ -468,9 +468,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/EaselPlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/EaselPlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/EndArrayPlugin.min.js": {
@@ -479,9 +479,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/EndArrayPlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/EndArrayPlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/ModifiersPlugin.min.js": {
@@ -490,9 +490,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/ModifiersPlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/ModifiersPlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/MorphSVGPlugin.min.js": {
@@ -501,9 +501,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/MorphSVGPlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/MorphSVGPlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/Physics2DPlugin.min.js": {
@@ -512,9 +512,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/Physics2DPlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/Physics2DPlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/PhysicsPropsPlugin.min.js": {
@@ -523,9 +523,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/PhysicsPropsPlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/PhysicsPropsPlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/PixiPlugin.min.js": {
@@ -534,9 +534,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/PixiPlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/PixiPlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/RaphaelPlugin.min.js": {
@@ -545,9 +545,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/RaphaelPlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/RaphaelPlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/RoundPropsPlugin.min.js": {
@@ -556,9 +556,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/RoundPropsPlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/RoundPropsPlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/ScrambleTextPlugin.min.js": {
@@ -567,9 +567,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/ScrambleTextPlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/ScrambleTextPlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/ScrollToPlugin.min.js": {
@@ -578,9 +578,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/ScrollToPlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/ScrollToPlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/TextPlugin.min.js": {
@@ -589,9 +589,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/TextPlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/TextPlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/plugins/ThrowPropsPlugin.min.js": {
@@ -600,9 +600,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/plugins/js/ThrowPropsPlugin.min-min.js",
+		"oAP": "/js/gsap/plugins/ThrowPropsPlugin.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/TimelineLite.min.js": {
@@ -611,9 +611,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/js/TimelineLite.min-min.js",
+		"oAP": "/js/gsap/TimelineLite.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/TimelineMax.min.js": {
@@ -622,9 +622,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/js/TimelineMax.min-min.js",
+		"oAP": "/js/gsap/TimelineMax.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/TweenLite.min.js": {
@@ -633,9 +633,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/js/TweenLite.min-min.js",
+		"oAP": "/js/gsap/TweenLite.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/TweenMax.min.js": {
@@ -644,9 +644,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/js/TweenMax.min-min.js",
+		"oAP": "/js/gsap/TweenMax.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/utils/Draggable.min.js": {
@@ -655,9 +655,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/utils/js/Draggable.min-min.js",
+		"oAP": "/js/gsap/utils/Draggable.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/utils/GSDevTools.min.js": {
@@ -666,9 +666,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/utils/js/GSDevTools.min-min.js",
+		"oAP": "/js/gsap/utils/GSDevTools.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/gsap/utils/SplitText.min.js": {
@@ -677,9 +677,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/gsap/utils/js/SplitText.min-min.js",
+		"oAP": "/js/gsap/utils/SplitText.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/script.js": {
@@ -688,9 +688,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/script.min.js",
-		"oF": 3,
-		"sC": 3,
+		"oAP": "/js/script-min.js",
+		"oF": 0,
+		"sC": 1,
 		"tS": 0
 		},
 	"/js/script.min.js": {
@@ -699,9 +699,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/js/script.min-min.js",
+		"oAP": "/js/script.min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 1,
 		"tS": 0
 		},
 	"/languages/de_DE.mo": {
@@ -752,7 +752,20 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/_fonts.css",
+		"oAP": "/sass/_fonts.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/sass/_reset.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/sass/_reset.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -766,7 +779,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/style.css",
-		"oF": 1,
+		"oF": 2,
 		"oS": 0,
 		"uL": 1
 		},
@@ -786,12 +799,18 @@
 		"oAP": "/single.php",
 		"oF": 0
 		},
+	"/src/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/src/node_modules",
+		"oF": 0
+		},
 	"/style.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/style-min.css",
 		"oF": 0,
 		"oS": 3
@@ -810,7 +829,7 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 572817578.18189597,
+	"creationDate": 609276915.198879,
 	"displayValue": "essential",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "/favicon/apple-touch-icon.png",
@@ -818,7 +837,8 @@
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
-	"alwaysUseExternalServer": 1,
+	"allowInjectionReloads": 1,
+	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerEnableIEGrid": 0,
@@ -829,6 +849,7 @@
 	"babelConfigType": 0,
 	"babelCustomPluginsList": "",
 	"babelCustomPresetsList": "",
+	"babelExcludeString": "/\\/node_modules\\//, /\\/core-js\\//, /\\/bower_components\\//",
 	"babelInsertModuleIDs": 0,
 	"babelModuleID": "",
 	"babelNoComments": 0,
@@ -968,6 +989,9 @@
 		"modules-umd": {
 			"active": 0
 			},
+		"named-capturing-groups-regex": {
+			"active": 0
+			},
 		"new-target": {
 			"active": 0
 			},
@@ -999,6 +1023,9 @@
 			"active": 0
 			},
 		"parameters": {
+			"active": 0
+			},
+		"partial-application": {
 			"active": 0
 			},
 		"pipeline-operator": {
@@ -1093,11 +1120,10 @@
 			}
 		},
 	"babelRetainLines": 0,
-	"bowerAbbreviatedPath": "bower-components",
-	"bowerAutoCreateInfoFile": 1,
-	"bowerInstallDevDependencies": 0,
-	"bowerSaveDependencies": 1,
-	"bowerSaveDevDependencies": 0,
+	"babelUseBuiltInsType": 0,
+	"bowerAbbreviatedPath": "bower_components",
+	"bowerForceLatestOnConflict": 1,
+	"bowerTargetDependencyListType": 1,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
 	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
@@ -1242,6 +1268,7 @@
 			"flagValue": -1
 			}
 		},
+	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
 	"esLintEnvironmentsMask": 1,
@@ -1296,7 +1323,7 @@
 			},
 		"camelcase": {
 			"active": 0,
-			"optionString": "{'properties': 'always', 'ignoreDestructuring': false}"
+			"optionString": "{'properties': 'always', 'ignoreDestructuring': false, 'ignoreImports': false}"
 			},
 		"capitalized-comments": {
 			"active": 0,
@@ -1343,6 +1370,10 @@
 			"optionString": "'all'"
 			},
 		"default-case": {
+			"active": 0,
+			"optionString": ""
+			},
+		"default-param-last": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -1398,6 +1429,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"grouped-accessor-pairs": {
+			"active": 0,
+			"optionString": "'anyOrder'"
+			},
 		"guard-for-in": {
 			"active": 0,
 			"optionString": ""
@@ -1416,7 +1451,7 @@
 			},
 		"id-match": {
 			"active": 0,
-			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true, 'ignoreDestructuring': false}"
 			},
 		"implicit-arrow-linebreak": {
 			"active": 0,
@@ -1508,7 +1543,7 @@
 			},
 		"new-parens": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "'always'"
 			},
 		"newline-per-chained-call": {
 			"active": 0,
@@ -1560,7 +1595,7 @@
 			},
 		"no-confusing-arrow": {
 			"active": 0,
-			"optionString": "{'allowParens': false}"
+			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
 			"active": 1,
@@ -1573,6 +1608,10 @@
 		"no-constant-condition": {
 			"active": 1,
 			"optionString": "{'checkLoops': true}"
+			},
+		"no-constructor-return": {
+			"active": 0,
+			"optionString": ""
 			},
 		"no-continue": {
 			"active": 0,
@@ -1599,6 +1638,10 @@
 			"optionString": ""
 			},
 		"no-dupe-class-members": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-else-if": {
 			"active": 1,
 			"optionString": ""
 			},
@@ -1660,7 +1703,7 @@
 			},
 		"no-extra-parens": {
 			"active": 0,
-			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false}"
+			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false, 'enforceForSequenceExpressions': false, 'enforceForNewInMemberExpressions': false}"
 			},
 		"no-extra-semi": {
 			"active": 1,
@@ -1694,6 +1737,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-import-assign": {
+			"active": 1,
+			"optionString": ""
+			},
 		"no-inline-comments": {
 			"active": 0,
 			"optionString": ""
@@ -1708,7 +1755,7 @@
 			},
 		"no-invalid-this": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "{'capIsConstructor': true}"
 			},
 		"no-irregular-whitespace": {
 			"active": 1,
@@ -1898,6 +1945,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-setter-return": {
+			"active": 1,
+			"optionString": ""
+			},
 		"no-shadow": {
 			"active": 0,
 			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
@@ -1916,7 +1967,7 @@
 			},
 		"no-tabs": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "{allowIndentationTabs: false}"
 			},
 		"no-template-curly-in-string": {
 			"active": 0,
@@ -1952,7 +2003,7 @@
 			},
 		"no-underscore-dangle": {
 			"active": 0,
-			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'enforceInMethodNames': false}"
+			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'allowAfterThisConstructor': false, 'enforceInMethodNames': false}"
 			},
 		"no-unexpected-multiline": {
 			"active": 1,
@@ -1976,7 +2027,7 @@
 			},
 		"no-unsafe-negation": {
 			"active": 1,
-			"optionString": ""
+			"optionString": "{'enforceForOrderingRelations': false}"
 			},
 		"no-unused-expressions": {
 			"active": 0,
@@ -2004,7 +2055,7 @@
 			},
 		"no-useless-computed-key": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "{'enforceForClassMembers': false}"
 			},
 		"no-useless-concat": {
 			"active": 0,
@@ -2102,6 +2153,14 @@
 			"active": 0,
 			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
+		"prefer-exponentiation-operator": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-named-capture-group": {
+			"active": 0,
+			"optionString": ""
+			},
 		"prefer-numeric-literals": {
 			"active": 0,
 			"optionString": ""
@@ -2113,6 +2172,10 @@
 		"prefer-promise-reject-errors": {
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
+			},
+		"prefer-regex-literals": {
+			"active": 0,
+			"optionString": ""
 			},
 		"prefer-rest-params": {
 			"active": 0,
@@ -2180,7 +2243,7 @@
 			},
 		"sort-keys": {
 			"active": 0,
-			"optionString": "'asc', {'caseSensitive': true, 'natural': false}"
+			"optionString": "'asc', {'caseSensitive': true, 'natural': false, 'minKeys': 2}"
 			},
 		"sort-vars": {
 			"active": 0,
@@ -2236,7 +2299,7 @@
 			},
 		"use-isnan": {
 			"active": 1,
-			"optionString": ""
+			"optionString": "{'enforceForSwitchCase': false, 'enforceForIndexOf': false}"
 			},
 		"valid-jsdoc": {
 			"active": 0,
@@ -2268,7 +2331,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http://localhost:8888/iwannegro",
+	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
@@ -2639,7 +2702,7 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 1,
+		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
@@ -2675,21 +2738,21 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 2,
+		"autoOutputPathStyle": 0,
 		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*-min.js",
-		"autoOutputPathRelativePath": "/js",
+		"autoOutputPathRelativePath": "/min",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 2,
+		"autoOutputPathStyle": 0,
 		"bundleFormat": 0,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
-		"syntaxCheckerStyle": 3,
+		"syntaxCheckerStyle": 1,
 		"transpilerStyle": 0
 		},
 	"languageDefaultsJSON": {
@@ -2722,7 +2785,6 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 1,
 		"enableJavascript": 0,
-		"ieCompatibility": 0,
 		"mathStyle": 0,
 		"outputStyle": 0,
 		"rewriteURLStyle": 0,
@@ -2836,7 +2898,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"pluginMask": 3758088159
+		"pluginMask": 52780316221407
 		},
 	"languageDefaultsTS": {
 		"autoOutputAction": 0,
@@ -2855,8 +2917,16 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"npmAbbreviatedPath": "",
+	"npmCreatePackageLock": 1,
+	"npmInstallOptionalDependencies": 0,
+	"npmSaveExactVersion": 0,
+	"npmTargetDependencyListType": 1,
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
+	"rollupExternals": "",
+	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
+	"rollupTreeshakingEnabled": 1,
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
@@ -3145,7 +3215,7 @@
 			"flagValue": -1
 			},
 		"unused": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"warnings": {

@@ -15,11 +15,10 @@
 				<div class="meta-description" data-scroll>
 					<?php if(!empty($post->post_content)) : ?><?php the_content(); ?><?php endif; ?>
 
-						<?php hello_project_taxonomy('type', __('Type:', 'hello')); ?>
-						<?php hello_project_taxonomy('task', __('Tasks:', 'hello')); ?>
-						<?php hello_project_taxonomy('agency', __('Agency:', 'hello')); ?>
-						<?php hello_project_awards(); ?>
-
+					<?php hello_project_taxonomy('task', __('Tasks:', 'hello')); ?>
+					<?php hello_project_taxonomy('type', __('Type:', 'hello')); ?>
+					<?php //hello_project_taxonomy('agency', __('Agency:', 'hello')); ?>
+					<?php hello_project_awards(); ?>
 				</div>
 			</div>
 			<?php $url = hello_project_get_website(); ?>
